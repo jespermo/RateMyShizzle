@@ -1,0 +1,18 @@
+﻿@{
+    ViewBag.Title = "Index";
+}
+
+@if (Request.IsAuthenticated) {
+    <text>
+        Hello master
+    </text>
+} else {
+    <text>
+        You are nto logged in!
+    </text>
+}
+
+
+
+<h2>Index</h2>
+<p>Here shizzle can be rated!</p>

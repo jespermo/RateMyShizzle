@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateMyShizzle", "RateMyShizzle\RateMyShizzle.csproj", "{FE18B16C-38B9-4B01-A54F-4726CA12908F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RateMyShizzle.Tests", "RateMyShizzle.Tests\RateMyShizzle.Tests.csproj", "{7FEB8869-81D4-465E-AF56-3A0C65E28A9C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE18B16C-38B9-4B01-A54F-4726CA12908F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE18B16C-38B9-4B01-A54F-4726CA12908F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE18B16C-38B9-4B01-A54F-4726CA12908F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE18B16C-38B9-4B01-A54F-4726CA12908F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FEB8869-81D4-465E-AF56-3A0C65E28A9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FEB8869-81D4-465E-AF56-3A0C65E28A9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FEB8869-81D4-465E-AF56-3A0C65E28A9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FEB8869-81D4-465E-AF56-3A0C65E28A9C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
