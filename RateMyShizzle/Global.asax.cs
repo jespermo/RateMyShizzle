@@ -6,6 +6,13 @@ using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Castle.MicroKernel.Registration;
+using Castle.Windsor;
+using Castle.Windsor.Installer;
+using RateMyShizzle.App_Start;
+using RateMyShizzle.App_Start.Control;
+using log4net.Core;
+using log4net.Repository.Hierarchy;
 
 namespace RateMyShizzle
 {
@@ -23,6 +30,22 @@ namespace RateMyShizzle
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
+            BootstrapContainer();
+        }
+
+        private static IWindsorContainer container;
+
+        private static void BootstrapContainer()
+        {
+            container = new WindsorContainer()
+                .Install(FromAssembly.This());
+            var controllerFactory = new ControllerFactory(container.Kernel);
+            ControllerBuilder.Current.SetControllerFactory(controllerFactory);
+        }
+
+        protected void Application_End()
+        {
+            container.Dispose();
         }
     }
 }

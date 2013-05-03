@@ -46,3 +46,11 @@ C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle.Tests\bin\Debug\DotNetOpenAuth
 C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle.Tests\obj\Debug\RateMyShizzle.Tests.csprojResolveAssemblyReference.cache
 C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle.Tests\obj\Debug\RateMyShizzle.Tests.dll
 C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle.Tests\obj\Debug\RateMyShizzle.Tests.pdb
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle.Tests\bin\Debug\Castle.Core.dll
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle.Tests\bin\Debug\Castle.Windsor.dll
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle.Tests\bin\Debug\nunit.framework.dll
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle.Tests\bin\Debug\Castle.Core.xml
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle.Tests\bin\Debug\Castle.Windsor.xml
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle.Tests\bin\Debug\nunit.framework.xml
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle.Tests\bin\Debug\log4net.dll
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle.Tests\bin\Debug\log4net.xml

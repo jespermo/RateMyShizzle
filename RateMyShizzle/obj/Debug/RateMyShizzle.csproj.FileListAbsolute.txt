@@ -47,3 +47,9 @@ C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle\bin\DotNetOpenAuth.OpenId.Rely
 C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle\obj\Debug\RateMyShizzle.csprojResolveAssemblyReference.cache
 C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle\obj\Debug\RateMyShizzle.dll
 C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle\obj\Debug\RateMyShizzle.pdb
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle\bin\Castle.Core.dll
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle\bin\Castle.Windsor.dll
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle\bin\Castle.Core.xml
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle\bin\Castle.Windsor.xml
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle\bin\log4net.dll
+C:\Users\jmo\code\git\RateMyShizzle\RateMyShizzle\bin\log4net.xml

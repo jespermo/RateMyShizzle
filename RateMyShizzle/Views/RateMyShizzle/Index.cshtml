@@ -5,7 +5,8 @@
 @if (Request.IsAuthenticated) {
     <text>
         Hello master
-    </text>
+        </text>
+            @ViewBag.UserName;
 } else {
     <text>
         You are nto logged in!
