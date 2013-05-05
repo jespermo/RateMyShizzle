@@ -3,10 +3,17 @@
 }
 
 @if (Request.IsAuthenticated) {
-    <text>
-        Hello master
+    <div>
+        <text>
+            Hello master
         </text>
             @ViewBag.UserName;
+
+        </div>
+    <div>
+<text>Using Rating: </text>
+                @ViewBag.Rate.Name
+        </div>
 } else {
     <text>
         You are nto logged in!

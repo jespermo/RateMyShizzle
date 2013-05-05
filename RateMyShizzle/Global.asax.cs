@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Http;
+﻿using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
 using Castle.Windsor.Installer;
-using RateMyShizzle.App_Start;
 using RateMyShizzle.App_Start.Control;
-using log4net.Core;
-using log4net.Repository.Hierarchy;
+using RateMyShizzle.Providers;
 
 namespace RateMyShizzle
 {
@@ -39,6 +33,7 @@ namespace RateMyShizzle
         {
             container = new WindsorContainer()
                 .Install(FromAssembly.This());
+            container.Register(Component.For<IRateProvider>().ImplementedBy<RateProvider>());
             var controllerFactory = new ControllerFactory(container.Kernel);
             ControllerBuilder.Current.SetControllerFactory(controllerFactory);
         }
