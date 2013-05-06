@@ -4,6 +4,12 @@
     padding: 0;
 }
 
+a.singleRating {
+    background: url("../Images/star.jpg") no-repeat top left;
+     display: block;
+     text-indent: -9999px; /* hides the link text */
+}
+
 body {
     background-color: #fff;
     border-top: solid 10px #000;

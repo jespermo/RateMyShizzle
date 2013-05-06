@@ -26,9 +26,14 @@ namespace RateMyShizzle.Controllers
         {
             var name = User.Identity.Name;
             ViewBag.UserName = name;
-            ViewBag.Rate = _rateProvider.Rate;
             //Get user polls and add to viewbag
             Logger.InfoFormat("name: {0}",name);
+            return View();
+        }
+
+        public ActionResult GetRating()
+        {
+            ViewBag.Scores = _rateProvider.Scores;
             return View();
         }
 

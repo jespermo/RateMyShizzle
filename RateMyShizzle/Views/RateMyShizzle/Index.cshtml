@@ -10,13 +10,11 @@
             @ViewBag.UserName;
 
         </div>
-    <div>
-<text>Using Rating: </text>
-                @ViewBag.Rate.Name
-        </div>
+
+    <div>@Html.ActionLink("Rate", "GetRating", "RateMyShizzle")</div>
 } else {
     <text>
-        You are nto logged in!
+        You are not logged in!
     </text>
 }
 

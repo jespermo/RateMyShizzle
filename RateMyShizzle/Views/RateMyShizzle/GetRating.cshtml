@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Rating";
+}
+
+<h2>Rating</h2>
+<div>
+    @foreach (var score in ViewBag.Scores)
+    {
+        <div>
+            Score by <p>@score.RatedBy</p>
+        </div>
+        for (int i = 0; i < @score.Score; i++)
+        {
+            <img src="~/Images/star.jpg"/>
+            <text> </text>
+
+        }
+    }
+</div>

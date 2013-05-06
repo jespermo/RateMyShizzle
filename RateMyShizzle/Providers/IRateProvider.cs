@@ -8,15 +8,27 @@ namespace RateMyShizzle.Providers
 {
     public interface IRateProvider
     {
-        Rate Rate { get; }
+        List<RatingScore> Scores { get; }
     }
 
     public class RateProvider: IRateProvider
     {
-        public Rate Rate 
-        { 
-            get { return new Rate{Name = "test"}; }
-            
+        private readonly List<RatingScore> _scores;
+
+        public RateProvider()
+        {
+            _scores = new List<RatingScore>();
+            _scores.Add(new RatingScore{CreatedDate = DateTime.Now,LastModifiedDate = DateTime.Now,});
+        }
+        public List<RatingScore> Scores
+        {
+            get
+            {
+                using (var context = new RatingContext())
+                {
+                    return new List<RatingScore>(context.RatingScores);
+                }
+            }
         }
     }
 }
