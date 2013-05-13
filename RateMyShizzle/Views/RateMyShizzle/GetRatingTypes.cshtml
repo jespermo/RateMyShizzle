@@ -1,0 +1,14 @@
+﻿<h2>Rating Types</h2>
+<div>
+    @foreach (var ratingType in ViewBag.RatingTypes)
+    {
+     
+        <div>
+            @{
+                string name = @ratingType.Name;
+                int id = @ratingType.RatingTypeId;
+            }
+            @Html.ActionLink(name,"GetRating", "RateMyShizzle", new {id = @id}, null)
+        </div>
+    }
+</div>

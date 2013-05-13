@@ -1,17 +1,15 @@
-﻿@{
-    ViewBag.Title = "Index";
-}
+﻿@model System.Security.Principal.IIdentity
 
 @if (Request.IsAuthenticated) {
     <div>
         <text>
-            Hello master
+            Hello master  @Model.Name;
         </text>
-            @ViewBag.UserName;
+           
 
         </div>
 
-    <div>@Html.ActionLink("Rate", "GetRating", "RateMyShizzle")</div>
+    <div>@Html.ActionLink("Ratings", "GetRatingTypes", "RateMyShizzle")</div>
 } else {
     <text>
         You are not logged in!

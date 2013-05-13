@@ -8,27 +8,51 @@ namespace RateMyShizzle.Providers
 {
     public interface IRateProvider
     {
-        List<RatingScore> Scores { get; }
+        List<RatingScoreDto> Scores { get; }
+        List<RatingType> GetRatingTypes();
     }
 
     public class RateProvider: IRateProvider
     {
-        private readonly List<RatingScore> _scores;
-
-        public RateProvider()
-        {
-            _scores = new List<RatingScore>();
-            _scores.Add(new RatingScore{CreatedDate = DateTime.Now,LastModifiedDate = DateTime.Now,});
-        }
-        public List<RatingScore> Scores
+        public List<RatingScoreDto> Scores
         {
             get
             {
                 using (var context = new RatingContext())
                 {
-                    return new List<RatingScore>(context.RatingScores);
+                    return
+                        new List<RatingScoreDto>(
+                            context
+                            .RatingScores
+                            .Include("RatedBy")
+                            .Include("RatingType")
+                            .ToList()
+                            .Select(CreateDto));
                 }
             }
         }
+
+        private RatingScoreDto CreateDto(RatingScore entity)
+        {
+            var dto = new RatingScoreDto {Name = entity.RatedBy.UserName, Score = entity.Score, RatingScoreId = entity.RatingScoreId};
+            return dto;
+        }
+
+        public List<RatingType> GetRatingTypes()
+        {
+            using (var context = new RatingContext())
+            {
+                return new List<RatingType>(context.RatingTypes);
+            }
+        }
+    }
+
+    public class RatingScoreDto
+    {
+        public string Name { get; set; }
+
+        public int Score { get; set; }
+
+        public int RatingScoreId { get; set; }
     }
 }

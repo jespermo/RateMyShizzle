@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Linq;
 using System.Web.Mvc;
-using Castle.Core.Logging;
 using RateMyShizzle.Providers;
 using log4net;
 
@@ -24,17 +20,24 @@ namespace RateMyShizzle.Controllers
         [Authorize]
         public ActionResult Index()
         {
-            var name = User.Identity.Name;
-            ViewBag.UserName = name;
             //Get user polls and add to viewbag
-            Logger.InfoFormat("name: {0}",name);
-            return View();
+            Logger.InfoFormat("name: {0}",User.Identity);
+            return View(User.Identity);
         }
 
-        public ActionResult GetRating()
+        public ActionResult GetRating(int? id)
         {
-            ViewBag.Scores = _rateProvider.Scores;
+            var valueOrDefault = id.GetValueOrDefault(0);
+            var ratingScores = _rateProvider.Scores.Where(s => s.RatingScoreId == valueOrDefault);
+
+            return View(ratingScores);
+        }
+        
+        public ActionResult GetRatingTypes()
+        {
+            ViewBag.RatingTypes = _rateProvider.GetRatingTypes();
             return View();
+
         }
 
     }

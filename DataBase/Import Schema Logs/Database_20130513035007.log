@@ -1,0 +1,73 @@
+13-05-2013 17:50:07	This log contains information about the import schema operation into project 'Database' on computer 'JMO-D60' by user 'jmo'.
+13-05-2013 17:50:08	Import of database schema has started.
+13-05-2013 17:50:12	Gathering database options
+13-05-2013 17:50:12	Gathering users
+13-05-2013 17:50:12	Gathering roles
+13-05-2013 17:50:12	Gathering application roles
+13-05-2013 17:50:12	Gathering role memberships
+13-05-2013 17:50:12	Gathering filegroups
+13-05-2013 17:50:12	Gathering full-text catalogs
+13-05-2013 17:50:12	Gathering assemblies
+13-05-2013 17:50:12	Gathering certificates
+13-05-2013 17:50:12	Gathering asymmetric keys
+13-05-2013 17:50:12	Gathering symmetric keys
+13-05-2013 17:50:12	Gathering encrypted symmetric keys
+13-05-2013 17:50:12	Gathering schemas
+13-05-2013 17:50:12	Gathering XML schema collections
+13-05-2013 17:50:12	Gathering user-defined data types
+13-05-2013 17:50:12	Gathering user-defined types
+13-05-2013 17:50:12	Gathering table types
+13-05-2013 17:50:12	Gathering unique keys for table types
+13-05-2013 17:50:12	Gathering primary keys for table types
+13-05-2013 17:50:12	Gathering check constraints for table types
+13-05-2013 17:50:12	Gathering default constraints for table types
+13-05-2013 17:50:12	Gathering partition functions
+13-05-2013 17:50:12	Gathering partition schemes
+13-05-2013 17:50:12	Gathering functions
+13-05-2013 17:50:12	Gathering encrypted functions
+13-05-2013 17:50:12	Gathering aggregates
+13-05-2013 17:50:12	Gathering procedures
+13-05-2013 17:50:12	Gathering encrypted procedures
+13-05-2013 17:50:12	Gathering tables
+13-05-2013 17:50:12	Gathering primary keys
+13-05-2013 17:50:12	Gathering unique constraints
+13-05-2013 17:50:12	Gathering foreign keys
+13-05-2013 17:50:12	Gathering default constraints
+13-05-2013 17:50:12	Gathering check constraints
+13-05-2013 17:50:12	Gathering views
+13-05-2013 17:50:12	Gathering encrypted views
+13-05-2013 17:50:12	Gathering indexes
+13-05-2013 17:50:12	Gathering statistics
+13-05-2013 17:50:12	Gathering full-text index stoplists
+13-05-2013 17:50:12	Gathering search property lists
+13-05-2013 17:50:12	Gathering search properties
+13-05-2013 17:50:12	Gathering full-text indexes
+13-05-2013 17:50:12	Gathering column store indexes
+13-05-2013 17:50:12	Gathering spatial indexes
+13-05-2013 17:50:12	Gathering XML indexes
+13-05-2013 17:50:12	Gathering encrypted triggers
+13-05-2013 17:50:12	Gathering triggers
+13-05-2013 17:50:12	Gathering encrypted and clr ddl triggers
+13-05-2013 17:50:12	Gathering ddl triggers
+13-05-2013 17:50:12	Gathering synonyms
+13-05-2013 17:50:12	Gathering defaults
+13-05-2013 17:50:12	Gathering data constraint uddt bindings
+13-05-2013 17:50:12	Gathering rules
+13-05-2013 17:50:12	Gathering data constraint uddt bindings
+13-05-2013 17:50:12	Gathering message types
+13-05-2013 17:50:12	Gathering queues
+13-05-2013 17:50:12	Gathering contracts
+13-05-2013 17:50:12	Gathering services
+13-05-2013 17:50:12	Gathering event notifications
+13-05-2013 17:50:12	Gathering remote service bindings
+13-05-2013 17:50:12	Gathering broker priorities
+13-05-2013 17:50:12	Gathering signatures
+13-05-2013 17:50:12	Gathering data compression options
+13-05-2013 17:50:12	Gathering sequence types
+13-05-2013 17:50:12	Gathering extended properties
+13-05-2013 17:50:12	Gathering credentials
+13-05-2013 17:50:12	Gathering logins
+13-05-2013 17:50:12	Gathering server audits
+13-05-2013 17:50:12	Finished importing database.
+13-05-2013 17:50:12	A summary of the import was saved to the following location: C:\Users\jmo\code\git\RateMyShizzle\DataBase\Import Schema Logs\Database_20130513035007.log
+13-05-2013 17:50:12	Click Finish to continue...
